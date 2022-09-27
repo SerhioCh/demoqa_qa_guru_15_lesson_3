@@ -21,7 +21,7 @@ public class JUnitDemoTest {
     }
     @Test
     void simpleTestFirst() {
-        System.out.println("###   @Test ssimpleTestFirst !");
+        System.out.println("###   @Test simpleTestFirst !");
         Assertions.assertTrue(3>2);
     }
     @Test
