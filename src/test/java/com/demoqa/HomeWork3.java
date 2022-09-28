@@ -49,7 +49,7 @@ public class HomeWork3 {
         $(byText("December")).click();
         $(byText("1997")).click();
         $(byText("17")).click();
-        $("#subjectsInput").setValue("about");;
+        $("#subjectsInput").setValue("Chemistry").pressEnter();
         $(byText("Sports")).click();
         $(byText("Select picture")).click();
         $("#uploadPicture").uploadFile(new File("src/test/data/img.png"));
@@ -60,20 +60,17 @@ public class HomeWork3 {
         $("#stateCity-wrapper"). $(byText("Delhi")).click();
         $("#submit").click();
 
-
+// Tests
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $$(".table-responsive").findBy(text("Student Name")).shouldHave(text("Serhio"+ " " +"Ramos"));
         $$(".table-responsive").findBy(text("Student Email")).shouldHave(text("serhio@Ramos.com"));
         $$(".table-responsive").findBy(text("Gender")).shouldHave(text("Male"));
         $$(".table-responsive").findBy(text("Mobile")).shouldHave(text("1234567891"));
         $$(".table-responsive").findBy(text("Date of Birth")).shouldHave(text("17"+" "+"December,1997"));
-        $$(".table-responsive").findBy(text("Subjects")).shouldHave(text(" ")); //Здесь должено быть значение не валю тест специально
+        $$(".table-responsive").findBy(text("Subjects")).shouldHave(text("Chemistry ")); //Здесь должено быть значение не валю тест специально
         $$(".table-responsive").findBy(text("Hobbies")).shouldHave(text("Sports"));
         $$(".table-responsive").findBy(text("Picture")).shouldHave(text("img.png"));
         $$(".table-responsive").findBy(text("Address")).shouldHave(text("My adress"));
         $$(".table-responsive").findBy(text("State and City")).shouldHave(text("NCR"+" "+"Delhi"));
-
-
-
     }
 }
