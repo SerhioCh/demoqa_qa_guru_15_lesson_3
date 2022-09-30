@@ -52,7 +52,7 @@ public class HomeWork3 {
         $("#subjectsInput").setValue("Chemistry").pressEnter();
         $(byText("Sports")).click();
         $(byText("Select picture")).click();
-        $("#uploadPicture").uploadFile(new File("src/test/data/img.png"));
+        $("#uploadPicture").uploadFromClasspath("img.png");
         $("#currentAddress").setValue("My adress");
         $("#state").click();
         $("#stateCity-wrapper"). $(byText("NCR")).click();
